@@ -9,9 +9,9 @@ Module.register("compliments", {
 	defaults: {
 		compliments: {
 			anytime: ["Hey there sexy!", "I miss you bugs"],
-			morning: ["Good morning, bugs!", "Enjoy your day!", "What was your sleep score??"],
-			afternoon: ["Hello, beauty!", "You look sexy!", "Looking good today!"],
-			evening: ["Wow, you look hot!", "You look nice!", "Hi, sexy!", "KTR, You are so cute!"],
+			morning: ["Good morning, bugs!", "Enjoy your day!", "What was your sleep score??", "It's a nice day out there today", "Have you checked the weather?"],
+			afternoon: ["Hello, beauty!", "You look sexy!", "Looking good today!", "How are you? I'm Chilean", "What do you call a dog made of wood?", "Why did the tomato blush?", "What does a house wear?"],
+			evening: ["Wow, you are Hot!", "You look nice", "Hi, sexy!", "KTR, You are so cute!", "Test!"],
 			"....-01-01": ["Happy new year!"]
 		},
 		updateInterval: 30000,
