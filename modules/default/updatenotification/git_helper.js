@@ -120,7 +120,8 @@ class GitHelper {
 		}
 
 		if (gitInfo.isBehindInStatus) {
-			return gitInfo;
+			// return gitInfo; GIT INFO!!!!!!!!!!!
+			return;
 		}
 
 		const { stderr } = await this.execShell(`cd ${repo.folder} && git fetch --dry-run`);
