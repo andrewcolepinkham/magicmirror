@@ -18,7 +18,7 @@ Module.register("compliments", {
 			anytime: ["Whats up!"],
 			morning: ["Good morning!", "Enjoy your day!", "It's a nice day out there today", "Have you checked the weather?"],
 			afternoon: ["It's the afternoon"],
-			evening: ["What are you looking at!"]
+			evening: ["What are you looking at!",  "This is a longer message that I am testing!"]
 		},
 		updateInterval: 30000,
 		remoteFile: null,
