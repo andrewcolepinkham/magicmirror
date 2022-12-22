@@ -7,13 +7,18 @@
 Module.register("compliments", {
 	// Module config defaults.
 	defaults: {
+		// compliments: {
+		// 	anytime: ["Hey there sexy!", "I miss you bugs"],
+		// 	morning: ["Good morning, bugs!", "Enjoy your day!", "What was your sleep score??", "It's a nice day out there today", "Have you checked the weather?"],
+		// 	afternoon: ["Hello, beauty!", "You look sexy!", "Looking good today!", "How are you? I'm Chilean", "What do you call a dog made of wood?", "Why did the tomato blush?", "What does a house wear?"],
+		// 	evening: ["Wow, you are Hot!", "You look nice", "Hi, sexy!", "KTR, You are so cute!", "So you like checking yourself out, huh?"],
+		// 	"....-01-01": ["Happy new year!"]
+		// },
 		compliments: {
-			anytime: ["Hey there sexy!", "I miss you bugs"],
-			morning: ["Good morning, bugs!", "Enjoy your day!", "What was your sleep score??", "It's a nice day out there today", "Have you checked the weather?"],
-			afternoon: ["Hello, beauty!", "You look sexy!", "Looking good today!", "How are you? I'm Chilean", "What do you call a dog made of wood?", "Why did the tomato blush?", "What does a house wear?"],
-			// evening: ["test"],
-			evening: ["Wow, you are Hot!", "You look nice", "Hi, sexy!", "KTR, You are so cute!"],
-			"....-01-01": ["Happy new year!"]
+			anytime: ["Whats up!"],
+			morning: ["Good morning!", "Enjoy your day!", "It's a nice day out there today", "Have you checked the weather?"],
+			afternoon: ["It's the afternoon"],
+			evening: ["What are you looking at!"]
 		},
 		updateInterval: 30000,
 		remoteFile: null,
