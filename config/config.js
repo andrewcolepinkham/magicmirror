@@ -58,6 +58,15 @@ let config = {
 			}
 		},
 		{
+			module: "MMM-ImagesPhotos",
+			position: "middle_center",
+			config: {
+				opacity: 0.9,
+				animationSpeed: 500,
+				updateInterval: 5000,
+			}
+		},
+		{
 			module: "compliments",
 			position: "lower_third"
 		},
