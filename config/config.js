@@ -32,7 +32,7 @@ let config = {
 		{
 			module: 'MMM-ModuleScheduler',
 			config: {
-				// SHOW ALL MODULES EXCEPT clock AND calender BETWEEN 06:00 AND 22:00
+				// SHOW ALL MODULES EXCEPT ImagesPhotos BETWEEN 07:30 AND 22:00
 				global_schedule: {from: '30 7 * * *', to: '0 22 * * *', ignoreModules: ['MMM-ImagesPhotos'] },
 			}
 		},
