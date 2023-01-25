@@ -17,6 +17,7 @@ Module.register("MMM-ImagesPhotos",{
 		maxHeight: "100%",
 		retryDelay: 2500
 	},
+	
 
 	requiresVersion: "2.1.0", // Required version of MagicMirror
 
@@ -25,12 +26,16 @@ Module.register("MMM-ImagesPhotos",{
 		this.photos = [];
 		this.loaded = false;
 		this.lastPhotoIndex = -1;
-
+		const d = new Date();
+		let time = d.getTime();
+		console.log("TIME: ", time)
 		// Schedule update timer.
-		this.getPhotos();
-		setInterval(function() {
-			self.updateDom(self.config.animationSpeed);
-		}, this.config.updateInterval);
+		if (false){
+			this.getPhotos();
+			setInterval(function() {
+				self.updateDom(self.config.animationSpeed);
+			}, this.config.updateInterval);
+		}
 
 	},
 
