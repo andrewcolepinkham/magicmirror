@@ -29,13 +29,13 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
-		{
-			module: 'MMM-ModuleScheduler',
-			config: {
-				// SHOW ALL MODULES EXCEPT ImagesPhotos BETWEEN 07:30 AND 22:00
-				global_schedule: {from: '30 7 * * *', to: '0 10 * * *', ignoreModules: ['MMM-ImagesPhotos', 'clock', 'calendar', 'compliments', 'alert', 'weather', 'newsfeed'] },
-			}
-		},
+		// {
+		// 	module: 'MMM-ModuleScheduler',
+		// 	config: {
+		// 		// SHOW ALL MODULES EXCEPT ImagesPhotos BETWEEN 07:30 AND 22:00
+		// 		global_schedule: {from: '30 7 * * *', to: '0 10 * * *', ignoreModules: ['MMM-ImagesPhotos', 'clock', 'calendar', 'compliments', 'alert', 'weather', 'newsfeed'] },
+		// 	}
+		// },
 		{
 			module: "alert",
             config: {
@@ -71,11 +71,20 @@ let config = {
 				opacity: 0.9,
 				animationSpeed: 500,
 				updateInterval: 5000,
+			},
+			classes: 'daytime_scheduler'
+		},
+		{
+			module: 'MMM-ModuleScheduler',
+			config: {
+				// SHOW MODULES WITH THE CLASS 'daytime_scheduler' AT 06:00 AND HIDE AT 22:00 EVERY DAY
+				global_schedule: {from: '0 6 * * *', to: '0 20 * * *', groupClass: 'daytime_scheduler'},
 			}
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "lower_third",
+			classes: 'daytime_scheduler'
 		},
 		{
 			module: "weather",
@@ -86,7 +95,8 @@ let config = {
 				location: "Colorado Springs",
 				locationID: "5417598", 
 				apiKey: "9fd3372ed04755bfe8a468a1b59f0fdc"
-			}
+			},
+			classes: 'daytime_scheduler'
 		},
 		{
 			module: "newsfeed",
@@ -102,7 +112,8 @@ let config = {
 				showPublishDate: true,
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
-			}
+			},
+			classes: 'daytime_scheduler'
 		},
 	]
 };
