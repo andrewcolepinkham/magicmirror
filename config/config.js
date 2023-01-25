@@ -72,19 +72,20 @@ let config = {
 				animationSpeed: 500,
 				updateInterval: 5000,
 			},
-			classes: 'daytime_scheduler'
+			classes: 'photo_scheduler'
 		},
 		{
 			module: 'MMM-ModuleScheduler',
 			config: {
 				// SHOW MODULES WITH THE CLASS 'daytime_scheduler' AT 06:00 AND HIDE AT 22:00 EVERY DAY
-				global_schedule: {from: '0 6 * * *', to: '0 20 * * *', groupClass: 'daytime_scheduler'},
+				global_schedule: {from: '0 20 * * *', to: '0 22 * * *', groupClass: 'photo_scheduler'},
+				global_schedule: {from: '0 22 * * *', to: '0 20 * * *', groupClass: 'compliments_scheduler'},
 			}
 		},
 		{
 			module: "compliments",
 			position: "lower_third",
-			classes: 'daytime_scheduler'
+			classes: "compliments_scheduler"
 		},
 		{
 			module: "weather",
@@ -96,7 +97,6 @@ let config = {
 				locationID: "5417598", 
 				apiKey: "9fd3372ed04755bfe8a468a1b59f0fdc"
 			},
-			classes: 'daytime_scheduler'
 		},
 		{
 			module: "newsfeed",
@@ -113,7 +113,6 @@ let config = {
 				broadcastNewsFeeds: true,
 				broadcastNewsUpdates: true
 			},
-			classes: 'daytime_scheduler'
 		},
 	]
 };
