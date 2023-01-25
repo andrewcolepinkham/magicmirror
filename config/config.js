@@ -79,14 +79,14 @@ let config = {
 			module: 'MMM-ModuleScheduler',
 			config: {
 				// SHOW MODULES WITH THE CLASS 'daytime_scheduler' AT 06:00 AND HIDE AT 22:00 EVERY DAY
-				global_schedule: {from: '0 22 * * *', to: '0 20 * * *', groupClass: 'photo_scheduler'},
+				global_schedule: {from: '0 20 * * *', to: '0 22 * * *', groupClass: 'photo_scheduler'},
 			}
 		},
 		{
 			module: 'MMM-ModuleScheduler',
 			config: {
 				// SHOW MODULES WITH THE CLASS 'daytime_scheduler' AT 06:00 AND HIDE AT 22:00 EVERY DAY
-				global_schedule: {from: '0 20 * * *', to: '0 22 * * *', groupClass: 'photo_scheduler_inverse'},
+				global_schedule: {from: '0 22 * * *', to: '0 20 * * *', groupClass: 'photo_scheduler_inverse'},
 			}
 		},
 		{
