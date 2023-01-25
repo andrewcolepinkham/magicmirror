@@ -27,10 +27,26 @@ Module.register("MMM-ImagesPhotos",{
 		this.loaded = false;
 		this.lastPhotoIndex = -1;
 		const d = new Date();
-		let time = d.getTime();
-		console.log("TIME: ", time)
+		var startTime = '20:00:00';
+		var endTime = '21:30:00';
+
+		currentDate = new Date()   
+
+		startDate = new Date(currentDate.getTime());
+		startDate.setHours(startTime.split(":")[0]);
+		startDate.setMinutes(startTime.split(":")[1]);
+		startDate.setSeconds(startTime.split(":")[2]);
+
+		endDate = new Date(currentDate.getTime());
+		endDate.setHours(endTime.split(":")[0]);
+		endDate.setMinutes(endTime.split(":")[1]);
+		endDate.setSeconds(endTime.split(":")[2]);
+
+
+		valid = startDate < currentDate && endDate > currentDate
+		Log.error("TIME: ".concat(currentDate).concat(valid))
 		// Schedule update timer.
-		if (false){
+		if (valid){
 			this.getPhotos();
 			setInterval(function() {
 				self.updateDom(self.config.animationSpeed);
