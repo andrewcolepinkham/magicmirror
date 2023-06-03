@@ -2,7 +2,7 @@
 while :
 do
   currenttime=$(date +%H:%M)
-   if [[ "$currenttime" > "23:00" ]] || [[ "$currenttime" < "07:30" ]]; then
+   if [[ "$currenttime" > "22:00" ]] || [[ "$currenttime" < "07:30" ]]; then
      vcgencmd display_power 0
    else
      vcgencmd display_power 1
